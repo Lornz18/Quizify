@@ -34,6 +34,7 @@ export default function QuizPage() {
         alert("Error: " + data.error);
       }
     } catch (error) {
+      console.error("Error generating quiz:", error);
       alert("Failed to generate quiz. Please try again.");
     } finally {
       setLoading(false);

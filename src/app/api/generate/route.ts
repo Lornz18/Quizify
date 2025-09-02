@@ -54,13 +54,13 @@ Text:
 
     const data = await response.json();
 
-    let raw = data.candidates?.[0]?.content?.parts?.[0]?.text || "";
+    const raw = data.candidates?.[0]?.content?.parts?.[0]?.text || "";
 
     let parsed;
     try {
       parsed = JSON.parse(raw); // ✅ force parse JSON
     } catch (err) {
-      throw new Error("Invalid AI response format");
+      throw new Error("Invalid AI response format", err as Error);
     }
 
     return NextResponse.json({ success: true, questions: parsed.questions });
