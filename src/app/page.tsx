@@ -100,7 +100,7 @@ export default function QuizPage() {
             <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent mb-6 leading-tight">
               Transform Notes into
               <br />
-              <span className="relative">
+              <span className="relative text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent mb-6 leading-tight">
                 Interactive Quizzes
                 <div className="absolute -bottom-2 left-0 right-0 h-3 bg-gradient-to-r from-blue-200 to-purple-200 rounded-full opacity-30"></div>
               </span>
