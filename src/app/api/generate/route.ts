@@ -4,7 +4,7 @@ const key = process.env.GEMINI_KEY;
 
 export async function POST(request: Request) {
   const { text } = await request.json();
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${key}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`;
 
   // 🔑 Strict JSON format instruction
   const prompt = `You are a quiz generator. 
